@@ -5,7 +5,7 @@
 <p align="center"> <img src="https://komarev.com/ghpvc/?username=morel-porel&label=Profile%20views&color=8ba888&style=flat-square&label=Profile+Views" alt="morel-porel profile view count" /> </p>
 
 - 💻 Learning about **Linux, System Administration,** and **Automation**
-- 🔨 Building a personal **HomeLab** for System Administration & Networking
+- 🔨 Building a personal **HomeLab** for **System Administration** & **Networking**
 
 <h3 align="Center">Connect with me:</h3>
 <p align="center" >
