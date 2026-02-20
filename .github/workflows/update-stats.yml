@@ -20,7 +20,7 @@ jobs:
           card: "stats"
           token: ${{ secrets.GITHUB_TOKEN }}
           path: "generated/overview.svg"
-          options: "username=morel-porel&show_icons=true&theme=vue-dark&bg_color=bbc9c1&border_radius=9.0&text_color=D46E5F&title_color=4B413D&hide_border=true"
+          options: "username=morel-porel&show_icons=true&theme=vue-dark&bg_color=bbc9c1&border_radius=9.0&text_color=D46E5F&title_color=4B413D&icon_color=4B413D&hide_border=true"
 
       - name: Generate Top Langs
         uses: readme-tools/github-readme-stats-action@v1
