@@ -28,7 +28,7 @@ jobs:
           card: "top-langs"
           token: ${{ secrets.GITHUB_TOKEN }}
           path: "generated/languages.svg"
-          options: "username=morel-porel&layout=donut&theme=vue-dark&bg_color=bbc9c1&border_radius=9.0&text_color=D46E5&title_color=4B413D&exclude_repo=Assembly&hide=CMake&hide_border=true"
+          options: "username=morel-porel&layout=donut&theme=vue-dark&bg_color=bbc9c1&border_radius=9.0&text_color=D46E5F&title_color=4B413D&exclude_repo=Assembly&hide=CMake&hide_border=true"
 
       - name: Commit and Push
         run: |
