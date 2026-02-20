@@ -1,4 +1,4 @@
-![Header](./morelsbanner.png)
+![Header](./morelsbanner.jpg)
 <h1 align="center">.✦ ݁˖ Hello! I'm Morel! ⋆˚࿔</h1>
 <h3 align="center">An Information Technology student sharing some of my works</h3>
 <h4 align="center">"Given Time, Technique Never Fails" <br><br> - Smithing Master Hewg</h4>
