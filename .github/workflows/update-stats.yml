@@ -1,0 +1,39 @@
+name: Update Readme Stats
+
+on:
+  schedule:
+    # Run once every 24 hours (at midnight)
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate General Stats
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: "stats"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          path: "generated/overview.svg"
+          options: "username=morel-porel&show_icons=true&theme=vue-dark&bg_color=8ba888&border_radius=9.0&text_color=CC8899&hide_border=true"
+
+      - name: Generate Top Langs
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: "top-langs"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          path: "generated/languages.svg"
+          options: "username=morel-porel&layout=donut&theme=vue-dark&bg_color=8ba888&border_radius=9.0&text_color=CC8899&exclude_repo=Assembly&hide=CMake&hide_border=true"
+
+      - name: Commit and Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add generated/*.svg
+          git commit -m "Update stats images" || exit 0
+          git push
