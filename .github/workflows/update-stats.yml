@@ -20,7 +20,7 @@ jobs:
           card: "stats"
           token: ${{ secrets.GITHUB_TOKEN }}
           path: "generated/overview.svg"
-          options: "username=morel-porel&show_icons=true&theme=vue-dark&bg_color=8ba888&border_radius=9.0&text_color=CC8899&hide_border=true"
+          options: "username=morel-porel&show_icons=true&theme=vue-dark&bg_color=bbc9c1&border_radius=9.0&text_color=D46E5F&title_color=4B413D&hide_border=true"
 
       - name: Generate Top Langs
         uses: readme-tools/github-readme-stats-action@v1
@@ -28,7 +28,7 @@ jobs:
           card: "top-langs"
           token: ${{ secrets.GITHUB_TOKEN }}
           path: "generated/languages.svg"
-          options: "username=morel-porel&layout=donut&theme=vue-dark&bg_color=8ba888&border_radius=9.0&text_color=CC8899&exclude_repo=Assembly&hide=CMake&hide_border=true"
+          options: "username=morel-porel&layout=donut&theme=vue-dark&bg_color=bbc9c1&border_radius=9.0&text_color=D46E5&title_color=4B413DF&exclude_repo=Assembly&hide=CMake&hide_border=true"
 
       - name: Commit and Push
         run: |
